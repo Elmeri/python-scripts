@@ -30,6 +30,6 @@ for d in data["data"]:
 print "Writing output to {}".format(output_file)
 
 with open(output_file, 'wb') as csvfile:
-    devicewriter = csv.writer(csvfile, delimiter='\t')
+    devicewriter = csv.writer(csvfile, delimiter=';')
     for row in columns:
         devicewriter.writerow(row)
